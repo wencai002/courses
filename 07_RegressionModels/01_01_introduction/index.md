@@ -203,7 +203,7 @@ manipulate(myPlot(beta), beta = slider(0.6, 1.2, step = 0.02))
 ```r
 lm(I(child - mean(child))~ I(parent - mean(parent)) - 1, data = galton)
 ```
-
+# this -1 here is used to set the lm function NOT to consider the interception 
 ```
 
 Call:
